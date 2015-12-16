@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JQ插件</title>
+		<meta http-equiv='Content-Type' content="text/html; charset=utf-8">
+		<script type="text/javascript" src="jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="FoldingPictureList.js"></script>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+		<script type="text/javascript">
+			$(function(){
+				$("#box").FoldingPictureList({
+					imgs: ["襄铃.png","方兰生.png","百里屠苏.png"],
+					size: "100px",
+					color: "#97427d",
+					direction: "right",
+					speed: 800,
+					isFold: false,
+					btnWidth: "20px"
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="box"></div>
+	</body>
+</html>
